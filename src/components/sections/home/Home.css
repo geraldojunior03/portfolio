@@ -1,0 +1,36 @@
+#welcome {
+  height: 89vh;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#container h1{
+  margin: 20px 0 10px 0;
+  color: #222;
+  font-size: 1.875em;
+}
+
+#container p {
+  color: #555;
+}
+
+#home-image{
+  max-width: 350px;
+  width: 100%;
+}
+
+@media (max-width: 380px) {
+  #content h1 {
+    font-size: 8vw;
+  }
+
+  #content p {
+    font-size: 4vw;
+  }
+}
