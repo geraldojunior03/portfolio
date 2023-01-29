@@ -16,7 +16,7 @@ function Navbar() {
     <header>
       <nav id="navbar">
         <div>
-          <h1>Portfolio</h1>
+          <h1>Geraldo Junior</h1>
         </div>
         <div>
           <ul>
@@ -40,7 +40,7 @@ function Navbar() {
         <div onClick={handleClick}>
           {
             click 
-            ? <button id="btnMobile"><FaSun /></button> 
+            ? <button id="btnMobile"><FaSun /></button>  
             : <button id="btnMobile"><FaMoon /></button>
           }
         </div>

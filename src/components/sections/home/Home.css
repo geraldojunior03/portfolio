@@ -17,6 +17,10 @@
 
 #container p {
   color: #555;
+  word-wrap: break-word;
+  word-break:keep-all;
+  max-width: 500px;
+  width: 100%;
 }
 
 #home-image{
@@ -24,12 +28,12 @@
   width: 100%;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   #content h1 {
-    font-size: 8vw;
+    font-size: 6.2vw;
   }
 
   #content p {
-    font-size: 4vw;
+    font-size: 3.3vw;
   }
 }
