@@ -28,6 +28,39 @@
   width: 100%;
 }
 
+#social-medias {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#social-medias a {
+  width: 40px;
+  height: 40px;
+  background-color: #c8c8c8;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  color: #111827;
+}
+
+#social-medias a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  #social-medias {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   #content h1 {
     font-size: 6.2vw;

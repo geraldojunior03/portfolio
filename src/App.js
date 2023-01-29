@@ -12,8 +12,8 @@ function App() {
     <>
       <Navbar />
       <Home />
-      {/* <FloatingNav />
-      <About /> */}
+      <FloatingNav />
+      {/* <About /> */}
     </>
   );
 }
