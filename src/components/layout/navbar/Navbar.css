@@ -26,11 +26,14 @@
   color: #888;
 }
 
+#menuMobile {
+  display: none;
+}
+
 #btnMobile {
   font-size: 1.875rem;
   line-height: 2.25rem;
   cursor: pointer;
-  display: none;
   align-items: center;
   color: #fff;
 }
@@ -40,18 +43,20 @@
     justify-content: space-evenly;
   }
 
-  #navbar-list {
-    display: block;
+   #navbar-list {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     visibility: hidden;
     height: 100vh;
-    width: 100%;
-    top: 0; right: -360px;
-    background-color: #4c1d95;
+    width: 0;
+    top: 0; right: 0;
+    background-color: #4d1d95;
     z-index: 2;
     transition: .6s;
-    overflow-y: hidden;
-    padding-top: calc(55%);
+    overflow: hidden;
   }
 
   #navbar-links li{
@@ -61,12 +66,12 @@
   }
 
   #navbar.active #navbar-list{
-    display: block;
-    right: 0;
+    width: 100%;
     visibility: visible;
   }
 
   #menuMobile {
+    display: flex;
     z-index: 3;
   }
 
