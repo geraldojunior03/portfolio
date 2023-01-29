@@ -1,7 +1,6 @@
-import { FaSun, FaMoon } from "react-icons/fa";
-import { useState } from "react";
+import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Navbar.css'
 
@@ -12,14 +11,16 @@ function Navbar() {
     setClick(!click)
   }
 
+  let toggleNavbar = click ? 'active' : null
+
   return (
     <header>
-      <nav id="navbar">
+      <nav id="navbar" className={toggleNavbar}>
         <div>
           <h1>Geraldo Junior</h1>
         </div>
-        <div>
-          <ul>
+        <div id="navbar-links">
+          <ul id="navbar-list">
             <li>
               <a href="#">Home</a>
             </li>
@@ -37,11 +38,11 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div onClick={handleClick}>
+        <div id="menuMobile">
           {
-            click 
-            ? <button id="btnMobile"><FaSun /></button>  
-            : <button id="btnMobile"><FaMoon /></button>
+            click
+              ? <button onClick={handleClick} id="btnMobile"><HiOutlineX/></button>
+              : <button onClick={handleClick} id="btnMobile"><HiOutlineMenuAlt3/></button>
           }
         </div>
       </nav>

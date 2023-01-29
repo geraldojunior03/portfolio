@@ -1,6 +1,5 @@
 import Navbar from './components/layout/navbar/Navbar'
 import Home from './components/sections/home/Home'
-import FloatingNav from './components/layout/floating_nav/FloatingNav'
 import About from './components/sections/about/About'
 import Services from './components/sections/services/Services'
 import Projects from './components/sections/projects/Projects'
@@ -12,7 +11,6 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <FloatingNav />
       {/* <About /> */}
     </>
   );
