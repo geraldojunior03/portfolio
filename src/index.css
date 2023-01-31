@@ -6,10 +6,10 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-/* 
-body {
-  overflow: hidden;
-} */
+
+html {
+  scroll-behavior: smooth;
+}
 
 button {
   border: none;

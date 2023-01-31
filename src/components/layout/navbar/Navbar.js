@@ -6,35 +6,56 @@ import './Navbar.css'
 
 function Navbar() {
   const [click, setClick] = useState(false)
+  const [fixed, setFixed] = useState(false)
 
   function handleClick() {
     setClick(!click)
   }
 
-  let toggleNavbar = click ? 'active' : null
+  function scrollWindow() {
+    if (window.scrollY > 1){
+      setFixed(true)
+    }
+
+    else {
+      setFixed(false)
+    }
+  }
+
+  function navbarClick(){
+    const navbar = document.getElementById('navbar')
+    if (navbar.classList.contains('active') === true){
+      setClick(!click)
+    }
+  }
+
+  let toggleNavbar = click ? 'active' : ''
+  let windowScroll = fixed ? 'fixed' : ''
+
+  window.addEventListener('scroll', scrollWindow)
 
   return (
     <header>
-      <nav id="navbar" className={toggleNavbar}>
+      <nav id="navbar" className={`${toggleNavbar} ${windowScroll}`}>
         <div>
           <h1>Geraldo Junior</h1>
         </div>
         <div id="navbar-links">
           <ul id="navbar-list">
             <li>
-              <a href="#">Home</a>
+              <a href="#" onClick={`${navbarClick}`}>Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about" onClick={`${navbarClick}`}>About</a>
             </li>
             <li>
-              <a href="#">Experiences</a>
+              <a href="#" onClick={`${navbarClick}`}>Projects</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#" onClick={`${navbarClick}`}>Skills</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#" onClick={`${navbarClick}`}>Contact</a>
             </li>
           </ul>
         </div>

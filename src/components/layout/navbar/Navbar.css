@@ -1,6 +1,7 @@
 #navbar {
   height: 100px;
   width: 100%;
+  position: fixed;
   background-color: #4c1d95;
   color: #fff;
   font-size: 1.125rem;
@@ -9,6 +10,12 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  transition: .5s;
+  z-index: 1000;
+}
+
+#navbar.fixed {
+  height: 80px;
 }
 
 #navbar h1 {
@@ -70,12 +77,8 @@
     visibility: visible;
   }
 
-  #menuMobile {
-    display: flex;
+  #menuMobile, #btnMobile {
+    display: block;
     z-index: 3;
-  }
-
-  #btnMobile {
-    display: flex;
   }
 }

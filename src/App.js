@@ -11,7 +11,9 @@ function App() {
     <>
       <Navbar />
       <Home />
-      {/* <About /> */}
+      <About />
+      <Projects />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
   );
 }

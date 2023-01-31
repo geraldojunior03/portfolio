@@ -1,0 +1,92 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 0;
+}
+
+.bloc-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  border: 3px solid transparent;
+  border-radius: 20px;
+}
+
+.active-tabs  {
+  background: white;
+  border: 3px solid #a9a9a9;
+}
+
+
+.content-tabs {
+  flex-grow : 1;
+}
+
+.projects-content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.projects-content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.projects-content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+
+.projects-content p {
+  width: 100%;
+  height: 100%;
+}
+
+.active-content {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background: rgb(93, 93, 93);
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+}
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100%;
+  height: 80px;
+  gap: 20px;
+  border-radius: 0px 0px 20px 20px;
+}
