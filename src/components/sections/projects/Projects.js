@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import ProjectCard from './ProjectCard';
-import { projetos } from '../../../projects.json'
+import dataProjetos from '../../../projects.json'
 import './Projects.css'
 
 function Projects() {
@@ -22,27 +22,49 @@ function Projects() {
             Back End
           </button>
           <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>
-            Tab 3
+            Others
           </button>
         </div>
         <div className="content-tabs">
           <div className={toggleState === 1 ? "projects-content  active-content" : "projects-content"} >
-            {/* {
-            projetos.map((project) => {
-              return (
-                <ProjectCard name={project.name}/>
-              )
-            })           
-          } */}
-            <ProjectCard />
+            {
+              dataProjetos.frontend.map((projeto) => {
+                return (
+                  <ProjectCard
+                    key={projeto.name}
+                    name={projeto?.name}
+                    description={projeto?.description}
+                  />
+                )
+              })
+            }
           </div>
-
           <div className={toggleState === 2 ? "projects-content  active-content" : "projects-content"}>
-            <ProjectCard />
+            {
+              dataProjetos.backend.map((projeto) => {
+                return (
+                  <ProjectCard
+                    key={projeto.name}
+                    name={projeto?.name}
+                    description={projeto?.description}
+                  />
+                )
+              })
+            }
           </div>
 
           <div className={toggleState === 3 ? "projects-content  active-content" : "projects-content"}>
-            <ProjectCard />
+          {
+              dataProjetos.others.map((projeto) => {
+                return (
+                  <ProjectCard
+                    key={projeto.name} 
+                    name={projeto?.name} 
+                    description={projeto?.description} 
+                  />
+                )
+              })
+            }
           </div>
         </div>
       </div>

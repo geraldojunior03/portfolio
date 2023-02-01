@@ -1,16 +1,20 @@
 import React from 'react'
 
-import imagem from '../../../assets/img/about.svg'
+import { BsBoxArrowUpRight } from 'react-icons/bs'
+import './ProjectCard.css'
 
-function ProjectCard({ name }) {
+import imagem from '../../../assets/img/project.png'
+
+function ProjectCard({ name, description }) {
   return (
     <div className="project">
-      <div className="image-container">
-        <img src={imagem} alt="Imagem projeto" />
-      </div>
-      <div className="text-content">
-        <a href="#">{name}</a>
-        <a href="#">name</a>
+      <img src={imagem} alt="Imagem projeto" />
+      <div className="overlay">
+        <h5>{name}</h5>
+        <span>{description}</span>
+        <a href="#">
+          <BsBoxArrowUpRight />
+        </a>
       </div>
     </div>
   )

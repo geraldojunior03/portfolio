@@ -1,0 +1,74 @@
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  height: 250px;
+}
+
+.project img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: .5s;
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(#5900ff1f, #5900ff);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: .5s;
+}
+
+.overlay h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.overlay span {
+  color: #eaeaea;
+  font-size: 1em;
+  line-height: 1.8;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.overlay a {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #5900ff;
+}
+
+.overlay a:hover {
+  color: #330093;
+  transform: scale(1.1);
+  font-size: 1.2em;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project:hover .overlay{
+  height: 100%;
+}
