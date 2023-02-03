@@ -12,7 +12,7 @@ function Home() {
           <img id="home-image" src={homeImage} alt="Start Image" />
           <div id="content">
             <h1>Geraldo Junior</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic commodi maxime, impedit ducimus provident libero saepe in? Atque, dolore alias.</p>
+            <p>Hello, welcome to my portfolio! Here you will know me a little better and the projects I've done throughout my career as a Web Developer. To learn more, continue down the page.</p>
           </div>
           <div id="homeBtn">
             <a href="#">Download CV</a>

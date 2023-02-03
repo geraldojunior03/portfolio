@@ -3,16 +3,14 @@ import React from 'react'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 import './ProjectCard.css'
 
-import imagem from '../../../assets/img/project.png'
-
-function ProjectCard({ name, description }) {
+function ProjectCard({ imagem, name, description, link}) {
   return (
     <div className="project">
       <img src={imagem} alt="Imagem projeto" />
       <div className="overlay">
         <h5>{name}</h5>
         <span>{description}</span>
-        <a href="#">
+        <a target="_blank" rel='noreferrer' href={link}>
           <BsBoxArrowUpRight />
         </a>
       </div>

@@ -1,65 +1,104 @@
+.projects-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0px 25px 0px;
+  text-align: center;
+}
+
+.projects-text p {
+  margin-top: 15px;
+}
+
+.projects-text h2::after {
+  content: " ";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: #36097e;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 10px;
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   width: 100%;
-  margin: 100px auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .bloc-tabs {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
 .tabs {
-  padding: 15px;
-  text-align: center;
-  width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+  background: #36097e;
+  padding: 1.2em 3.3em;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid transparent;
   cursor: pointer;
-  box-sizing: content-box;
-  position: relative;
-  outline: none;
-  border: 3px solid transparent;
-  border-radius: 20px;
+  transition: .3s;
+}
+
+.tabs:hover {
+  transform: scale(1.1);
 }
 
 .active-tabs  {
-  background: white;
-  border: 3px solid #a9a9a9;
+  background: transparent;
+  border: 2px solid #36097e;
+  color: #000;
 }
 
-.content-tabs {
-  flex-grow : 1;
+.showMore a {
+  background: #36097e;
+  padding: 1em 3.3em;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.showMore a:hover {
+  background: transparent;
+  border: 2px solid #36097e;
+  color: #000;
 }
 
 .projects-content {
   background: white;
   padding: 20px;
+  max-width: 1200px;
   width: 100%;
   height: 100%;
   display: none;
+  margin-bottom: 25px;
 }
 
 .projects-content h2 {
   padding: 0px 0 5px 0px;
 }
 
-.projects-content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-}
-
-.projects-content p {
-  width: 100%;
-  height: 100%;
-}
 
 .active-content {
   display: grid;
-  place-items: center;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   gap: 2.5em;
+}
+
+.no-projects {
+  margin-top: 50px;
+}
+
+#sad-face {
+  font-size: 3em;
 }
