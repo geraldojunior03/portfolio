@@ -1,0 +1,20 @@
+{
+  "faqs": [
+    {
+      "text": "How did I discover my programer side?",
+      "answer": "I've always been a technology lover in general. But, it was in games that I discovered my vocation to be a programmer, I liked to program modifications for games."
+    },
+    {
+      "text": "What languages ​​do I use to program?",
+      "answer": "Currently, I'm focused on Front-end, but I have solid knowledge in Back-end languages ​​like: 'Java', 'Python', 'C#'. I also have knowledge in SQL database."
+    },
+    {
+      "text": "What languages ​​do I use in programming?",
+      "answer": "Currently, I'm focused on front end programming, however, I have mastery in back end languages, such as: 'Java', 'Python', 'C#'."
+    },
+    {
+      "text": "What languages ​​do I use in programming?",
+      "answer": "Currently, I'm focused on front end programming, however, I have mastery in back end languages, such as: 'Java', 'Python', 'C#'."
+    }
+  ]
+}

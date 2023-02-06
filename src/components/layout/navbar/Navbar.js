@@ -6,20 +6,9 @@ import './Navbar.css'
 
 function Navbar() {
   const [click, setClick] = useState(false)
-  const [fixed, setFixed] = useState(false)
 
   function handleClick() {
     setClick(!click)
-  }
-
-  function scrollWindow() {
-    if (window.scrollY > 1){
-      setFixed(true)
-    }
-
-    else {
-      setFixed(false)
-    }
   }
 
   function navbarClick(){
@@ -30,13 +19,10 @@ function Navbar() {
   }
 
   let toggleNavbar = click ? 'active' : ''
-  let windowScroll = fixed ? 'fixed' : ''
-
-  window.addEventListener('scroll', scrollWindow)
 
   return (
     <header>
-      <nav id="navbar" className={`${toggleNavbar} ${windowScroll}`}>
+      <nav id="navbar" className={`${toggleNavbar}`}>
         <div>
           <h1>Geraldo Junior</h1>
         </div>

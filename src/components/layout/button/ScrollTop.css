@@ -1,0 +1,16 @@
+#btnmobile.active {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 2em;
+  padding: 10px 10px 5px 10px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#btnmobile:hover {
+  transform: scale(1.1);
+}

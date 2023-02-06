@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { BsEmojiFrown } from 'react-icons/bs'
 
-import ProjectCard from './ProjectCard';
+import ProjectCard from './card/ProjectCard';
 import dataProjetos from '../../../projects.json'
 import './Projects.css'
 
@@ -41,7 +41,7 @@ function Projects() {
                   <BsEmojiFrown id='sad-face' />
                 </div>
               ) : (
-                dataProjetos.frontend.map((projeto) => {
+                dataProjetos.frontend.slice(0, 6).map((projeto) => {
                   return (
                     <ProjectCard
                       key={projeto.name}

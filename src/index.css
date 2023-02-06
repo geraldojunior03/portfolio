@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --main-color: #6c63ff;
+  --light-main: #b892f0;
+  --main-dark: #330093;
+  --white: #fff;
+  --black: #000;
+  --dark-text: #222;
+  --light-text: #555;
+  --gray: #d7d7d7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +28,6 @@ button {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   transition: .3s;
 }

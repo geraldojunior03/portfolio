@@ -1,0 +1,169 @@
+.form-container {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+  position: relative;
+}
+
+.formDec {
+  position: absolute;
+  top: -160px;
+  width: 150px;
+  right: 25px;
+}
+
+.form-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.left-side::before {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.details {
+  margin: 14px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.3em;
+  color: var(--main-color);
+}
+
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-one {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.topic-text {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.message-box {
+  min-height: 110px;
+}
+
+textarea {
+  padding-top: 6px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+input[type="button"] {
+  color: var(--white);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--main-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+input[type="button"]:hover {
+  border: 2px solid var(--main-color);
+  background: transparent;
+  color: var(--light-text);
+}
+
+@media (max-width: 950px) {
+  .form-container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+
+  .formDec {
+    display: none;
+  }
+
+  .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 820px) {
+  .form-container {
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .form-content {
+    flex-direction: column-reverse;
+  }
+
+  .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-side::before {
+    display: none;
+  }
+
+  .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}

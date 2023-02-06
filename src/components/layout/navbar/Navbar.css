@@ -1,8 +1,8 @@
 #navbar {
   height: 100px;
   width: 100%;
-  background-color: #4c1d95;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--white);
   font-size: 1.125rem;
   line-height: 1.75rem;
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 #navbar a:hover {
-  color: #b892f0;
+  color: var(--light-main);
 }
 
 #menuMobile {
@@ -37,7 +37,7 @@
   line-height: 2.25rem;
   cursor: pointer;
   align-items: center;
-  color: #fff;
+  color: var(--white);
 }
 
 @media (max-width: 768px) {
@@ -45,30 +45,28 @@
     justify-content: space-evenly;
   }
 
-   #navbar-list {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   #navbar-list {  
+    display: block;  
     justify-content: center;
     position: absolute;
     visibility: hidden;
-    height: 100vh;
-    width: 0;
-    top: 0; right: 0;
-    background-color: #4d1d95;
+    height: 0;
+    width: 100%;
+    top: 100px; right: 0;
+    background-color: rgb(76, 29, 149, .5);
     z-index: 2;
     transition: .6s;
     overflow: hidden;
   }
 
   #navbar-links li{
-    text-align: center;
     padding: 1em 0px;
     margin: 0px 1em;
+    border-bottom: 2px solid rgb(98, 0, 245);
   }
 
   #navbar.active #navbar-list{
-    width: 100%;
+    height: calc(70vh - 100px);
     visibility: visible;
   }
 
