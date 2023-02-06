@@ -1,13 +1,13 @@
 import React from 'react'
 
 import './About.css'
-
+import aboutImage from '../../../assets/img/about.svg'
 import Circle from './circle/Circle'
 
 function About() {
   return (
     <section id="about">
-      <img alt="About" />
+      <img src={aboutImage} alt="About" />
       <div className="about-content">
         <div className="about-intro">
           <small>About Me</small>
