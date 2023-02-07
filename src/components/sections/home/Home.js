@@ -1,10 +1,17 @@
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
-import homeImage from '../../../assets/img/home-picture.png'
-import './Home.css'
+import homeImage from "../../../assets/img/home-picture.png"
+import CV from './CV/gj-cv.pdf'
+import "./Home.css"
 
 function Home() {
+  function letsTalk(e) {
+    e.preventDefault();
+    const elementToView = document.getElementById("contact");
+    elementToView.scrollIntoView();
+  }
+
   return (
     <section id="welcome">
       <div id="container">
@@ -15,8 +22,8 @@ function Home() {
             <p>Hello, welcome to my portfolio! Here you will know me a little better and the projects I've done throughout my career as a Web Developer. To learn more, continue down the page.</p>
           </div>
           <div id="homeBtn">
-            <a href="#">Download CV</a>
-            <a href="#">Let's Talk</a>
+            <a href={CV} download="Geraldo Junior - CV">Download CV</a>
+            <a href="#" onClick={letsTalk}>Let's Talk</a>
           </div>
         </div>
         <div id="social-medias">

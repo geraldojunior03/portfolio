@@ -5,6 +5,7 @@
   cursor: pointer;
   color: var(--white);
   height: 250px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
 }
 
 .project img {

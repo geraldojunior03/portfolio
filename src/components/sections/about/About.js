@@ -1,19 +1,36 @@
-import React from 'react'
+import React, {useEffect} from "react"
 
-import './About.css'
-import aboutImage from '../../../assets/img/about.svg'
-import Circle from './circle/Circle'
+import "./About.css"
+import aboutImage from "../../../assets/img/about.svg"
+import Circle from "./circle/Circle"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+import TypeIt from 'typeit-react';
 
 function About() {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <img src={aboutImage} alt="About" />
       <div className="about-content">
         <div className="about-intro">
           <small>About Me</small>
-          <h2>Who is <span>Geraldo Junior</span></h2>
+          <h2>Who is  
+          <TypeIt
+            options={{
+              strings: [" Geraldo Junior?"],
+              waitUntilVisible: true,
+              speed: 150,
+              loop: true
+            }}
+          />
+          </h2>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime mollitia labore alias consequatur! Iusto recusandae officia nihil autem dolorum earum animi beatae, aperiam molestiae distinctio inventore accusamus cum consectetur quod provident vero, error odit deleniti delectus ipsum voluptatum? Dolor aut officia quisquam accusantium, molestias maiores cumque et aspernatur magnam.</p>
+        <p>Hello, nice to meet you guys! My name is Geraldo Junior and this one is my portfolio and I developed it with the intention of showing all my projects that I've done both to sell and to train my skills. This site was designed based on some projects that I have already developed, or I based it on having seen it in some video on the internet or even images on the internet.</p>
         <div className="soft-skills">
           <Circle number={100} skill="Proactivity"/>
           <Circle number={70} skill="Creativity"/>

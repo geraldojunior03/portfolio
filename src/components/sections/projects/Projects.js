@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
-import { BsEmojiFrown } from 'react-icons/bs'
+import React, { useState, useEffect } from "react"
+import { BsEmojiFrown } from "react-icons/bs"
 
-import ProjectCard from './card/ProjectCard';
-import dataProjetos from '../../../projects.json'
-import './Projects.css'
+import ProjectCard from "./card/ProjectCard";
+import dataProjetos from "../../../projects.json"
+import "./Projects.css"
 
-import { validacaoFront, validacaoBack, validacaoOthers } from './functions/ValidacoesCard'
+import AOS from "aos"
+import  "aos/dist/aos.css"
+
+import { validacaoFront, validacaoBack, validacaoOthers } from "./functions/ValidacoesCard"
 
 function Projects() {
   const [toggleState, setToggleState] = useState(1);
@@ -14,8 +17,12 @@ function Projects() {
     setToggleState(index);
   };
 
+  useEffect(() => {
+    AOS.init();
+  })
+
   return (
-    <section id="projects">
+    <section id="projects" data-aos="fade-right">
       <div className="projects-text">
         <h2>Projetos</h2>
         <p>Here will have some projects that I developed</p>
@@ -36,9 +43,9 @@ function Projects() {
           <div className={toggleState === 1 ? "projects-content  active-content" : "projects-content"} >
             {
               dataProjetos.frontend.length <= 0 ? (
-                <div className='no-projects'>
+                <div className="no-projects">
                   <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
-                  <BsEmojiFrown id='sad-face' />
+                  <BsEmojiFrown id="sad-face" />
                 </div>
               ) : (
                 dataProjetos.frontend.slice(0, 6).map((projeto) => {
@@ -61,17 +68,25 @@ function Projects() {
           }
           <div className={toggleState === 2 ? "projects-content  active-content" : "projects-content"}>
             {
-              dataProjetos.backend.map((projeto) => {
-                return (
-                  <ProjectCard
-                    key={projeto.name}
-                    imagem={projeto?.imagem}
-                    name={projeto?.name}
-                    description={projeto?.description}
-                    link={projeto?.link}
-                  />
-                )
-              })
+              dataProjetos.backend.length <= 0 ? (
+                <div className="no-projects">
+                  <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
+                  <BsEmojiFrown id="sad-face" />
+                </div>
+              ) : (
+                dataProjetos.backend.map((projeto) => {
+                  return (
+                    <ProjectCard
+                      key={projeto.name}
+                      imagem={projeto?.imagem}
+                      name={projeto?.name}
+                      description={projeto?.description}
+                      link={projeto?.link}
+                    />
+                  )
+                })
+              )
+
             }
           </div>
           {
@@ -79,17 +94,24 @@ function Projects() {
           }
           <div className={toggleState === 3 ? "projects-content  active-content" : "projects-content"}>
             {
-              dataProjetos.others.map((projeto) => {
-                return (
-                  <ProjectCard
-                    key={projeto.name}
-                    imagem={projeto?.imagem}
-                    name={projeto?.name}
-                    description={projeto?.description}
-                    link={projeto?.link}
-                  />
-                )
-              })
+              dataProjetos.others.length <= 0 ? (
+                <div className="no-projects">
+                  <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
+                  <BsEmojiFrown id="sad-face" />
+                </div>
+              ) : (
+                dataProjetos.others.map((projeto) => {
+                  return (
+                    <ProjectCard
+                      key={projeto.name}
+                      imagem={projeto?.imagem}
+                      name={projeto?.name}
+                      description={projeto?.description}
+                      link={projeto?.link}
+                    />
+                  )
+                })
+              )
             }
           </div>
           {

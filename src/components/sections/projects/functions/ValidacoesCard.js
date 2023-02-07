@@ -1,4 +1,4 @@
-import dataProjetos from '../../../../projects.json'
+import dataProjetos from "../../../../projects.json"
 
 const validacaoFront = dataProjetos.frontend.length > 6 && (
   <div className="showMore">

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react"
+
+import "./Circle.css"
 
 function Circle({ number, skill }) {
   return (
@@ -6,7 +8,7 @@ function Circle({ number, skill }) {
       <svg>
         <circle cx="70" cy="70" r="70"></circle>
       </svg>
-      <div className='percent'>
+      <div className="percent">
         <h2>{number}%</h2>
         <small>{skill}</small>
       </div>

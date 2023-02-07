@@ -1,0 +1,19 @@
+.details {
+  margin: 14px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.3em;
+  color: var(--main-color);
+}
+
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-one {
+  font-size: 14px;
+  color: #afafb6;
+}

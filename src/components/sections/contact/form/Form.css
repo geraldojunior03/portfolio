@@ -1,5 +1,5 @@
 .form-container {
-  width: 85%;
+  width: 80%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
@@ -43,26 +43,6 @@
   background: #afafb6;
 }
 
-.details {
-  margin: 14px;
-  text-align: center;
-}
-
-.logo {
-  font-size: 2.3em;
-  color: var(--main-color);
-}
-
-.topic {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.text-one {
-  font-size: 14px;
-  color: #afafb6;
-}
-
 .right-side {
   width: 75%;
   margin-left: 75px;
@@ -73,56 +53,7 @@
   color: var(--main-color);
 }
 
-.input-box {
-  height: 50px;
-  width: 100%;
-  margin: 12px 0;
-}
 
-input,
-textarea {
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: #F0F1F8;
-  border-radius: 6px;
-  padding: 0 15px;
-  resize: none;
-}
-
-.message-box {
-  min-height: 110px;
-}
-
-textarea {
-  padding-top: 6px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 12px;
-}
-
-input[type="button"] {
-  color: var(--white);
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: var(--main-color);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-input[type="button"]:hover {
-  border: 2px solid var(--main-color);
-  background: transparent;
-  color: var(--light-text);
-}
 
 @media (max-width: 950px) {
   .form-container {

@@ -18,7 +18,7 @@
   line-height: 2.25rem;
 }
 
-#navbar-list {
+.navbar-list {
   display: flex;
   gap: 20px;
   list-style-type: none;
@@ -28,11 +28,11 @@
   color: var(--light-main);
 }
 
-#menuMobile {
+.menuMobile {
   display: none;
 }
 
-#btnMobile {
+.btnMobile {
   font-size: 1.875rem;
   line-height: 2.25rem;
   cursor: pointer;
@@ -45,7 +45,7 @@
     justify-content: space-evenly;
   }
 
-   #navbar-list {  
+   .navbar-list {  
     display: block;  
     justify-content: center;
     position: absolute;
@@ -59,18 +59,18 @@
     overflow: hidden;
   }
 
-  #navbar-links li{
+  .navbar-links li{
     padding: 1em 0px;
     margin: 0px 1em;
     border-bottom: 2px solid rgb(98, 0, 245);
   }
 
-  #navbar.active #navbar-list{
+  #navbar.active .navbar-list{
     height: calc(70vh - 100px);
     visibility: visible;
   }
 
-  #menuMobile, #btnMobile {
+  .menuMobile, .btnMobile {
     display: block;
     z-index: 3;
   }

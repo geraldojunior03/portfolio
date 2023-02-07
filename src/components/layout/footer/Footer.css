@@ -1,0 +1,37 @@
+#footer {
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+#footer h2{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#footer p {
+  font-weight: 200;
+}
+
+.footer-medias {
+  font-size: 2em;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-medias a:hover {
+  transform: scale(1.1);
+}
+
+#footer p:last-child {
+  justify-self: flex-end;
+  font-weight: 600;
+}
+

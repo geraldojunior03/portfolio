@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import { FaAngleUp } from "react-icons/fa";
 
 
-import './ScrollTop.css'
+import "./ScrollTop.css"
 
 function ScrollTop() {
   const [fixed, setFixed] = useState(false)
@@ -19,16 +19,15 @@ function ScrollTop() {
   
   function scrollTop(){
     window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+      top: 0
     })
   }
   
-  let windowScroll = fixed ? 'active' : null
-  window.addEventListener('scroll', scrollWindow)
+  let windowScroll = fixed ? "active" : null
+  window.addEventListener("scroll", scrollWindow)
 
   return (
-    <div className={windowScroll} id='btnmobile' onClick={scrollTop}>
+    <div className={windowScroll} id="btnmobile" onClick={scrollTop}>
       <FaAngleUp />
     </div>
   )

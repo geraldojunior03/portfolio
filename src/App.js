@@ -4,6 +4,7 @@ import About from './components/sections/about/About'
 import Projects from './components/sections/projects/Projects'
 import Faqs from './components/sections/faqs/Faqs'
 import Contact from './components/sections/contact/Contact'
+import Footer from './components/layout/footer/Footer'
 import ScrollTop from './components/layout/button/ScrollTop'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Faqs />
       <Contact />
+      <Footer />
       <ScrollTop />
     </>
   );

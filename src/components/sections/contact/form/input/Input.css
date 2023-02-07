@@ -1,0 +1,50 @@
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.message-box {
+  min-height: 110px;
+}
+
+textarea {
+  padding-top: 6px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+input[type="submit"] {
+  color: var(--white);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--main-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid var(--main-color);
+  background: transparent;
+  color: var(--light-text);
+}

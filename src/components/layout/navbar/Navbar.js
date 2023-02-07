@@ -1,8 +1,7 @@
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
+import React, { useState } from "react"
 
-import React, { useState } from 'react'
-
-import './Navbar.css'
+import "./Navbar.css"
 
 function Navbar() {
   const [click, setClick] = useState(false)
@@ -12,44 +11,42 @@ function Navbar() {
   }
 
   function navbarClick(){
-    const navbar = document.getElementById('navbar')
-    if (navbar.classList.contains('active') === true){
+    const navbar = document.getElementById("navbar")
+    if (navbar.classList.contains("active") === true){
       setClick(!click)
     }
   }
 
-  let toggleNavbar = click ? 'active' : ''
-
   return (
     <header>
-      <nav id="navbar" className={`${toggleNavbar}`}>
+      <nav id="navbar" className={`${click ? 'active' : ''}`}>
         <div>
           <h1>Geraldo Junior</h1>
         </div>
-        <div id="navbar-links">
-          <ul id="navbar-list">
+        <div className="navbar-links">
+          <ul className="navbar-list">
             <li>
-              <a href="#" onClick={`${navbarClick}`}>Home</a>
+              <a href="#home" onClick={navbarClick}>Home</a>
             </li>
             <li>
-              <a href="#about" onClick={`${navbarClick}`}>About</a>
+              <a href="#about" onClick={navbarClick}>About</a>
             </li>
             <li>
-              <a href="#" onClick={`${navbarClick}`}>Projects</a>
+              <a href="#projects" onClick={navbarClick}>Projects</a>
             </li>
             <li>
-              <a href="#" onClick={`${navbarClick}`}>Skills</a>
+              <a href="#faqs" onClick={navbarClick}>Faqs</a>
             </li>
             <li>
-              <a href="#" onClick={`${navbarClick}`}>Contact</a>
+              <a href="#contact" onClick={navbarClick}>Contact</a>
             </li>
           </ul>
         </div>
-        <div id="menuMobile">
+        <div className="menuMobile">
           {
             click
-              ? <button onClick={handleClick} id="btnMobile"><HiOutlineX/></button>
-              : <button onClick={handleClick} id="btnMobile"><HiOutlineMenuAlt3/></button>
+              ? <button onClick={handleClick} className="btnMobile"><HiOutlineX/></button>
+              : <button onClick={handleClick} className="btnMobile"><HiOutlineMenuAlt3/></button>
           }
         </div>
       </nav>
