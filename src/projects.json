@@ -17,6 +17,17 @@
 
   ],
   "others": [
-    
+    {
+      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1073241051403395082/image.png",
+      "name": "Memory Game",
+      "description": "A simple memory game developed using ReactJS.",
+      "link": "https://geraldojunior-memorygame.vercel.app/"
+    }, 
+    {
+      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1073243669160808449/image.png",
+      "name": "Calculator",
+      "description": "A simple calculator developed using ReactJS & MUI.",
+      "link": "https://geraldojunior-calculator.vercel.app/"
+    } 
   ]
 }
