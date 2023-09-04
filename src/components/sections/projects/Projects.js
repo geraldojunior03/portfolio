@@ -8,7 +8,7 @@ import "./Projects.css"
 import AOS from "aos"
 import  "aos/dist/aos.css"
 
-import { validacaoFront, validacaoBack, validacaoOthers } from "./functions/ValidacoesCard"
+import { validacaoFront, validacaoBack } from "./functions/ValidacoesCard"
 
 function Projects() {
   const [toggleState, setToggleState] = useState(1);
@@ -24,34 +24,31 @@ function Projects() {
   return (
     <section id="projects" data-aos="fade-right">
       <div className="projects-text">
-        <h2>Projetos</h2>
+        <h2>Projects</h2>
         <p>Here will have some projects that I developed</p>
       </div>
       <div className="projects-container">
         <div className="bloc-tabs">
           <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>
-            Front End
+            Automation
           </button>
           <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>
-            Back End
-          </button>
-          <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>
-            Others
+            Certificates
           </button>
         </div>
         <div className="content-tabs">
           <div className={toggleState === 1 ? "projects-content  active-content" : "projects-content"} >
             {
-              dataProjetos.frontend.length <= 0 ? (
+              dataProjetos.automation.length <= 0 ? (
                 <div className="no-projects">
                   <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
                   <BsEmojiFrown id="sad-face" />
                 </div>
               ) : (
-                dataProjetos.frontend.slice(0, 6).map((projeto) => {
+                dataProjetos.automation.slice(0, 6).map((projeto) => {
                   return (
                     <ProjectCard
-                      key={projeto.name}
+                      key={projeto?.id}
                       imagem={projeto?.imagem}
                       name={projeto?.name}
                       description={projeto?.description}
@@ -68,16 +65,16 @@ function Projects() {
           }
           <div className={toggleState === 2 ? "projects-content  active-content" : "projects-content"}>
             {
-              dataProjetos.backend.length <= 0 ? (
+              dataProjetos.certificates.length <= 0 ? (
                 <div className="no-projects">
                   <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
                   <BsEmojiFrown id="sad-face" />
                 </div>
               ) : (
-                dataProjetos.backend.map((projeto) => {
+                dataProjetos.certificates.slice(0, 6).map((projeto) => {
                   return (
                     <ProjectCard
-                      key={projeto.name}
+                      key={projeto?.id}
                       imagem={projeto?.imagem}
                       name={projeto?.name}
                       description={projeto?.description}
@@ -91,31 +88,6 @@ function Projects() {
           </div>
           {
             toggleState === 2 && validacaoBack
-          }
-          <div className={toggleState === 3 ? "projects-content  active-content" : "projects-content"}>
-            {
-              dataProjetos.others.length <= 0 ? (
-                <div className="no-projects">
-                  <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
-                  <BsEmojiFrown id="sad-face" />
-                </div>
-              ) : (
-                dataProjetos.others.map((projeto) => {
-                  return (
-                    <ProjectCard
-                      key={projeto.name}
-                      imagem={projeto?.imagem}
-                      name={projeto?.name}
-                      description={projeto?.description}
-                      link={projeto?.link}
-                    />
-                  )
-                })
-              )
-            }
-          </div>
-          {
-            toggleState === 3 && validacaoOthers
           }
         </div>
       </div>

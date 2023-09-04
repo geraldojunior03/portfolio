@@ -1,5 +1,5 @@
 {
-  "frontend": [
+  "automation": [
     {
       "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1072521406300041326/image.png",
       "name": "Studio Tatto",
@@ -13,21 +13,30 @@
       "link": "https://geraldojunior03.github.io/finans"
     }
   ],
-  "backend": [
-
-  ],
-  "others": [
+  "certificates": [
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1073241051403395082/image.png",
-      "name": "Memory Game",
-      "description": "A simple memory game developed using ReactJS.",
-      "link": "https://geraldojunior-memorygame.vercel.app/"
-    }, 
+      "imagem": "https://shorturl.at/ayFHJ",
+      "name": "Formação de Analista de Teste",
+      "description": "Certificado de formação de analista de teste na Conecte.",
+      "link": "https://shorturl.at/ayFHJ"
+    },
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1073243669160808449/image.png",
-      "name": "Calculator",
-      "description": "A simple calculator developed using ReactJS & MUI.",
-      "link": "https://geraldojunior-calculator.vercel.app/"
-    } 
+      "imagem": "https://shorturl.at/fUX89",
+      "name": "Testes automatizados com Selenium e Java",
+      "description": "Certificado sobre automação de teste com Selenium e Java",
+      "link": "https://shorturl.at/fUX89"
+    },
+    {
+      "imagem": "https://shorturl.at/adpGJ",
+      "name": "Automação de Teste com Selenium e Java",
+      "description": "Certificado sobre automação de teste com Selenium e Java",
+      "link": "https://shorturl.at/adpGJ"
+    },
+    {
+      "imagem": "https://shorturl.at/ENPQ9",
+      "name": "Automação de Teste com Cypress",
+      "description": "Certificado sobre automação de teste usando Cypress",
+      "link": "https://shorturl.at/ENPQ9"
+    }
   ]
 }

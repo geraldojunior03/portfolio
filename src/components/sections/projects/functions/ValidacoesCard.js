@@ -1,22 +1,16 @@
 import dataProjetos from "../../../../projects.json"
 
-const validacaoFront = dataProjetos.frontend.length > 6 && (
+const validacaoFront = dataProjetos.automation.length > 6 && (
   <div className="showMore">
-    <a>Show More</a>
+    <button id="moreButton">Show More</button>
   </div>
 )
 
-const validacaoBack = dataProjetos.backend.length > 6 && (
+const validacaoBack = dataProjetos.certificates.length > 6 && (
   <div className="showMore">
-    <a>Show More</a>
-  </div>
-)
-
-const validacaoOthers = dataProjetos.others.length > 6 && (
-  <div className="showMore">
-    <a>Show More</a>
+    <button id="moreButton">Show More</button>
   </div>
 )
 
 
-export { validacaoFront, validacaoBack, validacaoOthers }
+export { validacaoFront, validacaoBack }
