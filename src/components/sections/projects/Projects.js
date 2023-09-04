@@ -83,7 +83,6 @@ function Projects() {
                   )
                 })
               )
-
             }
           </div>
           {

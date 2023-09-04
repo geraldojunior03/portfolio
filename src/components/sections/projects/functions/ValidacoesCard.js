@@ -12,5 +12,4 @@ const validacaoBack = dataProjetos.certificates.length > 6 && (
   </div>
 )
 
-
 export { validacaoFront, validacaoBack }
