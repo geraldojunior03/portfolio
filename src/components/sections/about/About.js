@@ -18,11 +18,11 @@ function About() {
       <img src={aboutImage} alt="About" />
       <div className="about-content">
         <div className="about-intro">
-          <small>About Me</small>
-          <h2>Who is  
+          <small>Sobre mim</small>
+          <h2>Quem é
           <TypeIt
             options={{
-              strings: [" Geraldo Junior?"],
+              strings: ["Geraldo Junior?"],
               waitUntilVisible: true,
               speed: 150,
               loop: true
@@ -30,11 +30,11 @@ function About() {
           />
           </h2>
         </div>
-        <p>Hello, nice to meet you guys! My name is Geraldo Junior and this one is my portfolio and I developed it with the intention of showing all my projects that I've done both to sell and to train my skills. This site was designed based on some projects that I have already developed, or I based it on having seen it in some video on the internet or even images on the internet.</p>
+        <p>Olá, prazer em conhecer vocês! Meu nome é Geraldo Junior e este é meu portfólio e o desenvolvi com o intuito de mostrar todos os meus projetos que tenho feito tanto para vender quanto para treinar minhas habilidades. Este site foi desenhado com base em alguns projetos que já desenvolvi, ou baseei-me em ter visto em algum vídeo na internet ou mesmo em imagens na internet.</p>
         <div className="soft-skills">
-          <Circle number={100} skill="Proactivity"/>
-          <Circle number={70} skill="Creativity"/>
-          <Circle number={80} skill="Communication"/>
+          <Circle number={100} skill="Proatividade"/>
+          <Circle number={70} skill="Criatividade"/>
+          <Circle number={80} skill="Comunicação"/>
         </div>
       </div>
     </section>

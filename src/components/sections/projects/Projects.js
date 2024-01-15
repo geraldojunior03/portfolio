@@ -6,7 +6,7 @@ import dataProjetos from "../../../projects.json"
 import "./Projects.css"
 
 import AOS from "aos"
-import  "aos/dist/aos.css"
+import "aos/dist/aos.css"
 
 import { validacaoFront, validacaoBack } from "./functions/ValidacoesCard"
 
@@ -24,16 +24,16 @@ function Projects() {
   return (
     <section id="projects" data-aos="fade-right">
       <div className="projects-text">
-        <h2>Projects</h2>
-        <p>Here will have some projects that I developed</p>
+        <h2>Projetos</h2>
+        <p>Aqui irão conter projetos e certificados que já desenvolvi/conquistei.</p>
       </div>
       <div className="projects-container">
         <div className="bloc-tabs">
           <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>
-            Automation
+            Automação
           </button>
           <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>
-            Certificates
+            Certificados
           </button>
         </div>
         <div className="content-tabs">
@@ -41,7 +41,7 @@ function Projects() {
             {
               dataProjetos.automation.length <= 0 ? (
                 <div className="no-projects">
-                  <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
+                  <p>Infelizmente, o proprietário deste projeto não realizou nenhum projeto nesta categoria.</p>
                   <BsEmojiFrown id="sad-face" />
                 </div>
               ) : (
@@ -67,7 +67,7 @@ function Projects() {
             {
               dataProjetos.certificates.length <= 0 ? (
                 <div className="no-projects">
-                  <p>Unfortunately, the owner of this project has not made any projects in this category.</p>
+                  <p>Infelizmente, o proprietário deste projeto não realizou nenhum projeto nesta categoria.</p>
                   <BsEmojiFrown id="sad-face" />
                 </div>
               ) : (

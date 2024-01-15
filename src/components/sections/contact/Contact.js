@@ -15,8 +15,8 @@ function Contact() {
     <section id="contact" data-aos="fade-up">
       <div className="contact-intro">
         <div className="content">
-          <small>Contact Me</small>
-          <h2>Get in touch with <span>Geraldo Junior</span></h2>
+          <small>Contato</small>
+          <h2>Entre em contato com&nbsp;<span>Geraldo Junior</span></h2>
         </div>
       </div>
       <Form />

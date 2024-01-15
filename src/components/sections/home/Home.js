@@ -13,11 +13,11 @@ function Home() {
           <img id="home-image" src={homeImage} alt="Start" />
           <div id="content">
             <h1>Geraldo Junior</h1>
-            <p>Hello, welcome to my portfolio! Here you will know me a little better and the projects I've done throughout my career as a Web Developer. To learn more, continue down the page.</p>
+            <p>Bem-vindo ao meu portfólio! Aqui, você terá a oportunidade de conhecer um pouco mais sobre mim e os projetos que desenvolvi ao longo da minha carreira como Desenvolvedor WEB. Continue rolando a página para obter mais informações.</p>
           </div>
           <div id="homeBtn">
             <a href={CV} download="Geraldo Junior - CV">Download CV</a>
-            <a href="#contact">Let's Talk</a>
+            <a href="#contact">Contate-me</a>
           </div>
         </div>
         <div id="social-medias">

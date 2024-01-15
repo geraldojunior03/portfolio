@@ -29,16 +29,16 @@ function Navbar() {
               <a href="#home" onClick={navbarClick}>Home</a>
             </li>
             <li>
-              <a href="#about" onClick={navbarClick}>About</a>
+              <a href="#about" onClick={navbarClick}>Sobre Mim</a>
             </li>
             <li>
-              <a href="#projects" onClick={navbarClick}>Projects</a>
+              <a href="#projects" onClick={navbarClick}>Projetos</a>
             </li>
             <li>
               <a href="#faqs" onClick={navbarClick}>Faqs</a>
             </li>
             <li>
-              <a href="#contact" onClick={navbarClick}>Contact</a>
+              <a href="#contact" onClick={navbarClick}>Contato</a>
             </li>
           </ul>
         </div>

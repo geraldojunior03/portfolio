@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer id="footer">
       <h2>Geraldo Junior</h2>
-      <p>Portfolio website developed by Geraldo Junior.</p>
+      <p>Portfolio desenvolvido exclusivamente por Geraldo Junior.</p>
       <div className="footer-medias">
         <a href="https://www.linkedin.com/in/geraldo-junior03/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/geraldojunior03" target="_blank" rel="noreferrer"><FaGithub /></a>

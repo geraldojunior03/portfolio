@@ -15,7 +15,7 @@ function Form() {
           <Details />
         </div>
         <div className="right-side">
-          <h2 className="topic-text">Contact Me</h2>
+          <h2 className="topic-text">Entre em contato</h2>
           <Input />
         </div>
       </div>

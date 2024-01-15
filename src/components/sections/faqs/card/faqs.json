@@ -1,20 +1,20 @@
 {
   "faqs": [
     {
-      "text": "How did I discover my programer side?",
-      "answer": "I've always been a technology lover in general. But, it was in games that I discovered my vocation to be a programmer, I liked to program modifications for games."
+      "text": "Como descobri meu lado programador?",
+      "answer": "Sempre fui um amante da tecnologia em geral. Mas, foi nos jogos que descobri minha vocação de ser programador, gostava de programar modificações para jogos."
     },
     {
-      "text": "What languages ​​do I use to program?",
-      "answer": "Currently, I'm focused on Front-end, but I have solid knowledge in Back-end languages ​​like: 'Java', 'Python', 'C#'. I also have knowledge in SQL database."
+      "text": "Quais são minhas cases de sucesso",
+      "answer": "Atualmente, minha case de sucesso que eu tenho mais orgulho é ter sido aluno destaque em um curso fornecido pela empresa Conecte com parceria com a SvLabs."
     },
     {
-      "text": "How is Geraldo Junior in professional environment?",
-      "answer": "Although I worked in only one company, I was always praised for my proactivity and willingness to carry out the activities that were assigned to me."
+      "text": "Como é Geraldo Junior no ambiente profissional?",
+      "answer": "Apesar de ter trabalhado em apenas uma empresa, sempre fui elogiado pela minha proatividade e disposição para realizar as atividades que me foram atribuídas."
     },
     {
-      "text": "What are my graduations so far?",
-      "answer": "I started studying at Faculdade Oswaldo Cruz in 2021 and in my 4th semester, I migrated to UNIP where I am doing my last semester."
+      "text": "Quais são as minhas graduações até agora?",
+      "answer": "Estou cursando meu 3° semestre de Análise e Desenvolvimento de Sistemas na Universidade Paulista (UNIP)."
     }
   ]
 }
