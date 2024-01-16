@@ -19,7 +19,7 @@ function About() {
       <div className="about-content">
         <div className="about-intro">
           <small>Sobre mim</small>
-          <h2>Quem é
+          <h2>Quem é&nbsp;
           <TypeIt
             options={{
               strings: ["Geraldo Junior?"],
