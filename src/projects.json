@@ -1,42 +1,30 @@
 {
   "automation": [
-    {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1072521406300041326/image.png?ex=66154de5&is=6602d8e5&hm=664e145b44f30f94d799fc6d2d1d51e3d7da23f53d8f4d47a74fc0fa1c91780e&",
-      "name": "Studio Tatto",
-      "description": "A tatto website that I developed using ReactJS.",
-      "link": "https://studio-tatto.vercel.app/"
-    },
-    {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1072549588726202398/image.png?ex=66156824&is=6602f324&hm=bcb6ed669d2b7a47bcfc1fa4d77942c25a366c1781e1c48274dc38022ae6e991&",
-      "name": "Finans",
-      "description": "A Finans website that I developed using Bootstrap.",
-      "link": "https://geraldojunior03.github.io/finans"
-    }
   ],
   "certificates": [
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1148382440671420476/Certificado_-_Geraldo_Sobral.png?ex=66146dfd&is=6601f8fd&hm=47611948f232317a88ff7a0453f3879a5b0f73ad2ad37d6c72f4df33e41d9778&",
+      "imagem": "./img/certificado-conecte.png",
       "name": "Formação de Analista de Teste",
       "description": "Certificado de formação de analista de teste na Conecte.",
-      "link": "https://cdn.discordapp.com/attachments/1069757916644642816/1148382440671420476/Certificado_-_Geraldo_Sobral.png?ex=66146dfd&is=6601f8fd&hm=47611948f232317a88ff7a0453f3879a5b0f73ad2ad37d6c72f4df33e41d9778&"
+      "link": "./img/certificado-conecte.png"
     },
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1148383126364618802/UC-0ee72b65-a5d8-492d-ae68-c1acf705d197.png?ex=66146ea1&is=6601f9a1&hm=5ca289b6a8de397b3b158adc456e14ebf28bfc147fde7394698612e15d27632c&",
+      "imagem": "./img/udemy-selenium.png",
       "name": "Testes automatizados com Selenium e Java",
       "description": "Certificado sobre automação de teste com Selenium e Java",
-      "link": "https://cdn.discordapp.com/attachments/1069757916644642816/1148383126364618802/UC-0ee72b65-a5d8-492d-ae68-c1acf705d197.png?ex=66146ea1&is=6601f9a1&hm=5ca289b6a8de397b3b158adc456e14ebf28bfc147fde7394698612e15d27632c&"
+      "link": "./img/udemy-selenium.png"
     },
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1148383852998438912/DCF6267C.png?ex=66146f4e&is=6601fa4e&hm=cd26ef8c441643733a34c07becb5a078e7f1f9654945b583a06a1f14dc0e212d&",
+      "imagem": "./img/dio-selenium.png",
       "name": "Automação de Teste com Selenium WebDriver e Java",
       "description": "Certificado sobre automação de teste com Selenium e Java",
-      "link": "https://cdn.discordapp.com/attachments/1069757916644642816/1148383852998438912/DCF6267C.png?ex=66146f4e&is=6601fa4e&hm=cd26ef8c441643733a34c07becb5a078e7f1f9654945b583a06a1f14dc0e212d&"
+      "link": "./img/dio-selenium.png"
     },
     {
-      "imagem": "https://cdn.discordapp.com/attachments/1069757916644642816/1148384986567823391/Certificado_-_Cypress.png?ex=6614705c&is=6601fb5c&hm=8fd79a32ac67c46fc16ac54a8647cabdfe1b1636f32a827ab64df7718ee576f4&",
+      "imagem": "./img/alura-cypress.png",
       "name": "Automação de Teste com Cypress",
       "description": "Certificado sobre automação de teste usando Cypress",
-      "link": "https://cdn.discordapp.com/attachments/1069757916644642816/1148384986567823391/Certificado_-_Cypress.png?ex=6614705c&is=6601fb5c&hm=8fd79a32ac67c46fc16ac54a8647cabdfe1b1636f32a827ab64df7718ee576f4&"
+      "link": "./img/alura-cypress.png"
     }
   ]
 }
