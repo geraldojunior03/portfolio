@@ -10,14 +10,20 @@ function Home() {
     <section id="welcome">
       <div id="container">
         <div id="home-container">
-          <img id="home-image" src={homeImage} alt="Start" />
+          <div className="home-portrait">
+            <img id="home-image" src={homeImage} alt="Geraldo Junior" />
+            <div className="portrait-label">
+              <span>QA ENGINEER</span>
+              <small>Automação &amp; qualidade</small>
+            </div>
+          </div>
           <div id="content">
             <h1>Geraldo Junior</h1>
-            <p>Bem-vindo ao meu portfólio! Aqui, você terá a oportunidade de conhecer um pouco mais sobre mim e os projetos que desenvolvi ao longo da minha carreira como Desenvolvedor WEB. Continue rolando a página para obter mais informações.</p>
+            <p>QA apaixonado por qualidade de software, automação e melhoria contínua. Trabalho criando frameworks robustos e integrando testes a pipelines CI/CD para garantir entregas mais seguras e eficientes.</p>
           </div>
           <div id="homeBtn">
-            <a href={CV} download="Geraldo Junior - CV">Download CV</a>
             <a href="#contact">Contate-me</a>
+            <a href={CV} download="Geraldo Junior - CV">Download CV</a>
           </div>
         </div>
         <div id="social-medias">

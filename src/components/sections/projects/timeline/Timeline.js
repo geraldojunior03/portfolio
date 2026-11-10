@@ -23,9 +23,16 @@ const Timeline = () => {
     {
       accentColor: '#330093',
       title: 'Alelo - Analista QA',
-      year: '2023 - 2025',
+      year: '2023 - 2026',
       description:
         'Atuando na Alelo com testes regressivos manuais e automatizados. Utilizando da linguagem Java e framework Selenium.',
+    },
+    {
+      accentColor: '#6c63ff',
+      title: 'Capgemini - Engenheiro QA',
+      year: '2026 - Atualmente',
+      description:
+        'Pariticapando de projetos de testes manuais com conversação em inglês.',
     }
   ];
 

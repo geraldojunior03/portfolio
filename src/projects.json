@@ -1,7 +1,19 @@
 {
   "automation": [
+    {
+      "imagem": "./img/automacao-template.svg",
+      "name": "Template de Automação",
+      "description": "Template base com Java, Selenium e Cucumber para automação de testes.",
+      "link": "https://github.com/geraldojunior03/automacao-template"
+    }
   ],
   "certificates": [
+    {
+      "imagem": "./img/graduacao-unip.png",
+      "name": "Graduação em ADS",
+      "description": "Graduação em Analise e Desenvolvimento de Sistemas pela UNIP",
+      "link": "./img/graduacao-unip.png"
+    },
     {
       "imagem": "./img/certificado-conecte.png",
       "name": "Formação de Analista de Teste",
@@ -25,6 +37,12 @@
       "name": "Automação de Teste com Cypress",
       "description": "Certificado sobre automação de teste usando Cypress",
       "link": "./img/alura-cypress.png"
+    },
+    {
+      "imagem": "./img/microsoft-copilot.png",
+      "name": "Certificado Microsoft Copilot",
+      "description": "Certificado do Microsoft Github-Copilot",
+      "link": "./img/microsoft-copilot.png"
     }
   ]
 }

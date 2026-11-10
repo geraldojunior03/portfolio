@@ -2,37 +2,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 24px 56px;
 }
 
 .contact-intro {
   text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-intro .content {
+  max-width: 700px;
 }
 
 .contact-intro small {
+  display: block;
+  margin-bottom: 8px;
   color: var(--main-color);
   font-weight: 800;
   font-size: .8em;
   text-transform: uppercase;
+  letter-spacing: .08em;
 }
 
 .contact-intro h2 {
   color: var(--dark-text);
-  text-transform: capitalize;
-  font-size: 1.5em;
+  font-size: 1.75rem;
+  line-height: 1.35;
 }
 
 .contact-intro h2::after {
-  content: " ";
+  content: "";
   display: block;
-  width: 70px;
-  height: 2px;
-  left: 50%;
+  width: 52px;
+  height: 3px;
   background: var(--main-color);
-  transform: translate(-50%, -50%);
-  position: relative;
-  margin: 15px 0;
+  margin: 14px auto 0;
 }
 
 .contact-intro h2 span {
   color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 52px 16px 36px;
+  }
+
+  .contact-intro h2 {
+    font-size: 1.45rem;
+  }
 }

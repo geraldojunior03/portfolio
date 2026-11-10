@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title">
+  <title id="title">Template de automacao com Java, Selenium e Cucumber</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#211642" />
+      <stop offset="1" stop-color="#4d2a91" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#background)" />
+  <circle cx="550" cy="72" r="100" fill="#8b6be0" opacity=".14" />
+  <rect x="46" y="46" width="548" height="328" rx="12" fill="#171326" stroke="#ffffff" stroke-opacity=".2" />
+  <path d="M46 88h548" stroke="#ffffff" stroke-opacity=".16" />
+  <circle cx="72" cy="67" r="6" fill="#ee6a83" />
+  <circle cx="94" cy="67" r="6" fill="#edc35c" />
+  <circle cx="116" cy="67" r="6" fill="#6bc6a2" />
+  <text x="142" y="72" fill="#c9c1da" font-family="Arial, sans-serif" font-size="13">automation-template</text>
+  <text x="82" y="145" fill="#b89cf4" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">QA AUTOMATION</text>
+  <text x="82" y="193" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Automation</text>
+  <text x="82" y="232" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Template</text>
+  <text x="82" y="269" fill="#d5cfe3" font-family="Arial, sans-serif" font-size="15">Uma base reutilizavel para testes</text>
+  <rect x="82" y="302" width="88" height="34" rx="17" fill="#e9b949" />
+  <text x="126" y="324" text-anchor="middle" fill="#261d30" font-family="Arial, sans-serif" font-size="13" font-weight="700">JAVA</text>
+  <rect x="181" y="302" width="116" height="34" rx="17" fill="#61b6a3" />
+  <text x="239" y="324" text-anchor="middle" fill="#152b2a" font-family="Arial, sans-serif" font-size="13" font-weight="700">SELENIUM</text>
+  <rect x="308" y="302" width="118" height="34" rx="17" fill="#e99c76" />
+  <text x="367" y="324" text-anchor="middle" fill="#39211e" font-family="Arial, sans-serif" font-size="13" font-weight="700">CUCUMBER</text>
+  <path d="M462 148h82M462 174h56M462 200h72M462 226h44" stroke="#b89cf4" stroke-width="5" stroke-linecap="round" opacity=".8" />
+  <path d="M462 264h60M462 290h78" stroke="#6bc6a2" stroke-width="5" stroke-linecap="round" opacity=".8" />
+</svg>

@@ -21,7 +21,7 @@
 .overlay {
   width: 100%;
   height: 0;
-  background: linear-gradient(#5900ff1f, var(--main-color));
+  background: linear-gradient(#6b63ff60, var(--main-color));
   position: absolute;
   left: 0;
   bottom: 0;
@@ -42,7 +42,7 @@
 }
 
 .overlay span {
-  color: var(--gray);
+  color: #f1f1f1;
   font-size: 1em;
   line-height: 1.8;
   width: 100%;

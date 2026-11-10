@@ -1,29 +1,30 @@
-import React, { useState } from "react"
+import React, { useId, useState } from "react"
+import { FiPlus } from "react-icons/fi"
 
 import "./FaqCard.css"
 
 function FaqCard({ text, answer }) {
   const [toggleFaq, setToggleFaq] = useState(false)
-  let isToggled = toggleFaq ? "active" : null
+  const answerId = useId()
+  const isToggled = toggleFaq ? "active" : ""
 
   function handleFaq(){
     setToggleFaq(!toggleFaq)
   }
 
   return (
-    <div className={`faq ${isToggled}`} onClick={handleFaq}>
-      <div className="question">
+    <div className={`faq ${isToggled}`}>
+      <button
+        className="question"
+        type="button"
+        aria-expanded={toggleFaq}
+        aria-controls={answerId}
+        onClick={handleFaq}
+      >
         <h3>{text}</h3>
-        <svg width="15" height="10" viewBox="0 0 42 25">
-          <path 
-            d="M3 3L21 21L39 3"
-            stroke="white"
-            strokeWidth="7"
-            strokeLinecap="round"
-          />
-        </svg>
-      </div>
-      <div className="answer">
+        <span className="faq-toggle"><FiPlus aria-hidden="true" /></span>
+      </button>
+      <div className="answer" id={answerId} aria-hidden={!toggleFaq}>
         <p>{answer}</p>
       </div>
     </div>

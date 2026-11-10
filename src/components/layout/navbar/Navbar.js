@@ -24,7 +24,7 @@ function Navbar() {
           <h1>Geraldo Junior</h1>
         </div>
         <div className="navbar-links">
-          <ul className="navbar-list">
+          <ul className="navbar-list" id="mobile-navigation">
             <li>
               <a href="#home" onClick={navbarClick}>Home</a>
             </li>
@@ -45,8 +45,8 @@ function Navbar() {
         <div className="menuMobile">
           {
             click
-              ? <button onClick={handleClick} className="btnMobile"><HiOutlineX/></button>
-              : <button onClick={handleClick} className="btnMobile"><HiOutlineMenuAlt3/></button>
+              ? <button onClick={handleClick} className="btnMobile" aria-label="Fechar menu" aria-expanded="true" aria-controls="mobile-navigation"><HiOutlineX/></button>
+              : <button onClick={handleClick} className="btnMobile" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-navigation"><HiOutlineMenuAlt3/></button>
           }
         </div>
       </nav>

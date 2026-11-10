@@ -30,7 +30,7 @@ function About() {
           />
           </h2>
         </div>
-        <p>Olá, prazer em conhecer vocês! Meu nome é Geraldo Junior e este é meu portfólio e o desenvolvi com o intuito de mostrar todos os meus projetos que tenho feito tanto para vender quanto para treinar minhas habilidades. Este site foi desenhado com base em alguns projetos que já desenvolvi, ou baseei-me em ter visto em algum vídeo na internet ou mesmo em imagens na internet.</p>
+        <p>Olá, eu sou Geraldo Junior, profissional da área de tecnologia com foco em qualidade de software e automação de testes. Desenvolvi este portfólio com o objetivo de apresentar meus projetos, experiências e soluções que venho construindo ao longo da minha trajetória. Aqui você encontrará aplicações desenvolvidas para aprimoramento técnico e demonstração prática das minhas habilidades em desenvolvimento e automação.</p>
         <div className="soft-skills">
           <Circle number={100} skill="Proatividade"/>
           <Circle number={70} skill="Criatividade"/>

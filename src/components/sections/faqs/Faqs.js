@@ -16,7 +16,7 @@ function Faqs() {
     <section id="faqs" data-aos="fade-down">
       <div className="title">
         <small>FAQs</small>
-        <h2>Algumas questões&nbsp;<span>sobrem mim</span></h2>
+        <h2>Algumas questões <span>sobre mim</span></h2>
       </div>
       <div className="faqs-section">
         {

@@ -8,13 +8,21 @@ input,
 textarea {
   height: 100%;
   width: 100%;
-  border: none;
+  border: 1px solid #e2e1eb;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f7f7fb;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--main-color);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, .14);
 }
 
 .message-box {
@@ -32,19 +40,18 @@ textarea {
 
 input[type="submit"] {
   color: var(--white);
-  font-size: 18px;
+  font-size: 1rem;
   outline: none;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 24px;
   border-radius: 6px;
   background: var(--main-color);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color .2s ease, transform .2s ease;
   border: 2px solid transparent;
 }
 
 input[type="submit"]:hover {
-  border: 2px solid var(--main-color);
-  background: transparent;
-  color: var(--light-text);
+  background: var(--main-dark);
+  transform: translateY(-1px);
 }
