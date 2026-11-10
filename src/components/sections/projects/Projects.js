@@ -52,7 +52,7 @@ function Projects() {
                 dataProjetos.certificates.slice(0, 6).map((projeto) => {
                   return (
                     <ProjectCard
-                      key={projeto?.id}
+                      key={projeto?.link || projeto?.imagem}
                       imagem={projeto?.imagem}
                       name={projeto?.name}
                       description={projeto?.description}
@@ -82,7 +82,7 @@ function Projects() {
                 dataProjetos.automation.slice(0, 6).map((projeto) => {
                   return (
                     <ProjectCard
-                      key={projeto?.id}
+                      key={projeto?.link || projeto?.imagem}
                       imagem={projeto?.imagem}
                       name={projeto?.name}
                       description={projeto?.description}

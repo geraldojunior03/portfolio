@@ -62,13 +62,17 @@ h1 {
 /* date */
 .projects ul li .date {
   --dateH: 3rem;
-  height: var(--dateH);
+  box-sizing: border-box;
+  min-height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
+  padding: 0.5rem 1rem;
   text-align: center;
   background-color: var(--accent-color);
   color: white;
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 4vw, 1.25rem);
   font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
   display: grid;
   place-content: center;
   position: relative;

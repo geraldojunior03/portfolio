@@ -32,7 +32,7 @@ const Timeline = () => {
       title: 'Capgemini - Engenheiro QA',
       year: '2026 - Atualmente',
       description:
-        'Pariticapando de projetos de testes manuais com conversação em inglês.',
+        'Participando de projetos de testes manuais com conversação em inglês.',
     }
   ];
 

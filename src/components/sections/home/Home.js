@@ -14,7 +14,7 @@ function Home() {
             <img id="home-image" src={homeImage} alt="Geraldo Junior" />
             <div className="portrait-label">
               <span>QA ENGINEER</span>
-              <small>Automação &amp; qualidade</small>
+              <small>Automação &amp; Qualidade</small>
             </div>
           </div>
           <div id="content">
