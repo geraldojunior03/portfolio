@@ -1,20 +1,24 @@
 {
   "faqs": [
     {
-      "text": "Como descobri meu lado programador?",
-      "answer": "Sempre fui um amante da tecnologia em geral. Mas, foi nos jogos que descobri minha vocação de ser programador, gostava de programar modificações para jogos."
+      "text": "Qual é minha formação acadêmica?",
+      "answer": "Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Paulista (UNIP), com conclusão em dezembro de 2024. Durante minha formação, desenvolvi uma base sólida em programação, desenvolvimento de software e tecnologia."
     },
     {
-      "text": "Quais são minhas cases de sucesso",
-      "answer": "Atualmente, minha case de sucesso que eu tenho mais orgulho é ter sido aluno destaque em um curso fornecido pela empresa Conecte com parceria com a SvLabs."
+      "text": "Qual é minha experiência como QA?",
+      "answer": "Minha trajetória profissional começou na SVLabs, onde evoluí de estagiário para Analista QA Jr., trabalhando principalmente com automação de testes Web e API. Atualmente, sou Engenheiro QA na Capgemini, atuando em um projeto da Johnson & Johnson com testes manuais em plataformas Appian e metodologia ágil."
     },
     {
-      "text": "Como é Geraldo Junior no ambiente profissional?",
-      "answer": "Apesar de ter trabalhado em apenas uma empresa, sempre fui elogiado pela minha proatividade e disposição para realizar as atividades que me foram atribuídas."
+      "text": "Como começou minha paixão por programação?",
+      "answer": "Minha paixão por tecnologia começou desde cedo, principalmente por meio dos jogos. Foi explorando modificações e personalizações de jogos que comecei a despertar meu interesse por programação. O que inicialmente era um hobby acabou se transformando em uma carreira profissional na área de tecnologia."
     },
     {
-      "text": "Quais são as minhas graduações até agora?",
-      "answer": "Estou cursando meu 3° semestre de Análise e Desenvolvimento de Sistemas na Universidade Paulista (UNIP)."
+      "text": "Como é o Geraldo no ambiente profissional?",
+      "answer": "Sou um profissional proativo, curioso e comprometido com a qualidade das entregas. Gosto de entender como as coisas funcionam, buscar soluções e colaborar com o time. Acredito que comunicação, organização e vontade de aprender são fundamentais para construir bons resultados."
+    },
+    {
+      "text": "Quais tecnologias fazem parte do meu dia a dia?",
+      "answer": "Tenho experiência com Java, Selenium WebDriver, Cucumber, RestAssured, Postman, JUnit, TestNG, Maven e SQL. Também já trabalhei com ferramentas de CI/CD, como Azure DevOps e Jenkins, além de atuar atualmente com testes funcionais em plataformas Appian."
     }
   ]
 }
